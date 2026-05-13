@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Itamar Mainemer - Strategic Communications and AI Lectures</title>
+  <desc id="desc">Open Graph image for Mainemer Media website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="96" width="1040" height="438" rx="26" fill="#131a2b" stroke="#1f2940" stroke-width="2"/>
+  <text x="140" y="210" fill="#5eead4" font-size="46" font-family="Assistant, Arial, sans-serif" font-weight="700">Itamar Mainemer</text>
+  <text x="140" y="278" fill="#f1f5f9" font-size="40" font-family="Assistant, Arial, sans-serif" font-weight="700">Strategic Communications | PR | AI Lectures</text>
+  <text x="140" y="350" fill="#cbd5e1" font-size="30" font-family="Assistant, Arial, sans-serif">Israel-focused media strategy, reputation and conference moderation.</text>
+  <rect x="140" y="404" width="560" height="10" rx="5" fill="url(#accent)"/>
+  <text x="140" y="470" fill="#94a3b8" font-size="28" font-family="Assistant, Arial, sans-serif">Mainemer Media</text>
+</svg>

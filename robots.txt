@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block low-value technical patterns if they appear later
+Disallow: /node_modules/
+Disallow: /dist/
+
+Sitemap: https://itamarmainemer.com/sitemap.xml

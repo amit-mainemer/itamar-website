@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Mainemer Media Logo</title>
+  <desc id="desc">Mainemer Media textual logo for social and schema use.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="#0a0e1a"/>
+  <g fill="url(#g)" font-family="Assistant, Arial, sans-serif" text-anchor="middle">
+    <text x="256" y="240" font-size="76" font-weight="700">Mainemer</text>
+    <text x="256" y="310" font-size="58" font-weight="600">Media</text>
+  </g>
+</svg>

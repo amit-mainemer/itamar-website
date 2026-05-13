@@ -1,0 +1,4 @@
+date,experiment_name,page,hypothesis,metric,baseline,result,status,next_action
+2026-05-13,title_hebrew_rewrite,index.html,Clarifying core service terms in title improves CTR,organic_ctr,0.00,0.00,planned,Measure after 14 days
+2026-05-13,faq_schema_service_page,services/strategic-communications.html,FAQ schema improves rich result visibility,rich_results_impressions,0,0,planned,Check Search Console enhancement report
+2026-05-13,en_page_launch,en/index.html,English landing page captures Israeli English queries,organic_sessions,0,0,planned,Review query report in 30 days
