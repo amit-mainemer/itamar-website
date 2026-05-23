@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Privacy policy banner</title>
+  <desc id="desc">Abstract shield and data layers representing privacy and security.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1020" />
+      <stop offset="100%" stop-color="#102540" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1260" cy="180" r="230" fill="#22d3ee" opacity="0.1" />
+  <rect x="150" y="150" width="640" height="600" rx="30" fill="#10213d" stroke="#365179" />
+  <path d="M470 245l180 72v146c0 135-88 235-180 282-92-47-180-147-180-282V317l180-72z" fill="url(#shield)" opacity="0.9" />
+  <path d="M388 460l58 58 108-108" fill="none" stroke="#06212b" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="860" y="200" width="580" height="120" rx="20" fill="#112643" />
+  <rect x="860" y="360" width="500" height="120" rx="20" fill="#112643" />
+  <rect x="860" y="520" width="540" height="120" rx="20" fill="#112643" />
+  <rect x="910" y="248" width="360" height="14" rx="7" fill="#2dd4bf" />
+  <rect x="910" y="279" width="490" height="10" rx="5" fill="#5eead4" opacity="0.45" />
+  <rect x="910" y="408" width="300" height="14" rx="7" fill="#2dd4bf" />
+  <rect x="910" y="439" width="420" height="10" rx="5" fill="#5eead4" opacity="0.45" />
+  <rect x="910" y="568" width="330" height="14" rx="7" fill="#2dd4bf" />
+  <rect x="910" y="599" width="450" height="10" rx="5" fill="#5eead4" opacity="0.45" />
+</svg>
