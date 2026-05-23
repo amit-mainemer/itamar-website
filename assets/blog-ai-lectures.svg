@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="AI lectures">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g stroke="#5eead4" stroke-width="6" fill="none" stroke-linecap="round">
+    <circle cx="800" cy="450" r="190"/>
+    <circle cx="800" cy="450" r="120"/>
+    <path d="M610 450 H990"/>
+    <path d="M800 260 V640"/>
+    <path d="M680 330 L920 570"/>
+    <path d="M920 330 L680 570"/>
+  </g>
+  <g fill="#ccfbf1" font-family="Arial, sans-serif">
+    <text x="140" y="770" font-size="64" font-weight="700">AI Lectures</text>
+    <text x="140" y="824" font-size="34">Practical AI " Leadership Workshops " 90-Day Roadmaps</text>
+  </g>
+</svg>

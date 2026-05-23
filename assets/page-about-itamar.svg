@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Professional profile backdrop</title>
+  <desc id="desc">Abstract illustration of communication strategy and public speaking.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220" />
+      <stop offset="100%" stop-color="#111f39" />
+    </linearGradient>
+    <linearGradient id="teal" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#5eead4" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1200" cy="220" r="260" fill="#2dd4bf" opacity="0.12" />
+  <circle cx="350" cy="760" r="300" fill="#22d3ee" opacity="0.1" />
+  <rect x="140" y="170" width="560" height="560" rx="28" fill="#0f1b31" stroke="#2a3d63" />
+  <rect x="220" y="260" width="400" height="250" rx="24" fill="#122442" />
+  <circle cx="420" cy="330" r="52" fill="#2dd4bf" opacity="0.85" />
+  <rect x="312" y="412" width="216" height="22" rx="11" fill="#3b82f6" opacity="0.6" />
+  <rect x="260" y="454" width="320" height="18" rx="9" fill="#5eead4" opacity="0.45" />
+  <rect x="240" y="492" width="360" height="18" rx="9" fill="#5eead4" opacity="0.32" />
+  <path d="M860 250h560v86H860z" fill="#0f1c33" stroke="#3a557f" />
+  <path d="M860 390h480v86H860z" fill="#0f1c33" stroke="#3a557f" />
+  <path d="M860 530h530v86H860z" fill="#0f1c33" stroke="#3a557f" />
+  <path d="M860 293h320" stroke="url(#teal)" stroke-width="10" stroke-linecap="round" />
+  <path d="M860 433h270" stroke="url(#teal)" stroke-width="10" stroke-linecap="round" />
+  <path d="M860 573h300" stroke="url(#teal)" stroke-width="10" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executive Personal Branding | Itamar Mainemer</title>
+  <meta name="description" content="Personal branding for executives: positioning, visibility, thought leadership, and reputation management." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://itamarmainemer.com/en/services/executive-personal-branding.html" />
+  <link rel="alternate" hreflang="en-IL" href="https://itamarmainemer.com/en/services/executive-personal-branding.html" />
+  <link rel="alternate" hreflang="he-IL" href="https://itamarmainemer.com/services/executive-personal-branding.html" />
+  <style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-surface: #111827;
+    --bg-muted: #1f2940;
+    --navy-deep: #050f24;
+    --teal: #2dd4bf;
+    --teal-bright: #5eead4;
+    --text: #f1f5f9;
+    --text-soft: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.14);
+    --panel: #0b1527;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { margin: 0; font-family: Assistant, Arial, sans-serif; background: var(--bg); color: var(--text); }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    background: transparent;
+  }
+  .nav.scrolled {
+    padding: 14px 40px;
+    background: rgba(10, 14, 26, 0.7);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: none;
+  }
+  .nav-logo { height: 36px; transition: height 0.4s ease; }
+  .nav.scrolled .nav-logo { height: 30px; }
+  .nav-links {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    align-items: center;
+    background: rgba(26, 34, 54, 0.6);
+    border: 1px solid var(--border);
+    padding: 6px;
+    border-radius: 100px;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  }
+  .nav-links a {
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+  }
+  .nav-links a:hover { color: var(--text); background: rgba(255, 255, 255, 0.06); }
+  .nav-cta { background: var(--teal) !important; color: var(--navy-deep) !important; padding: 9px 20px !important; font-weight: 600 !important; }
+  .nav-cta:hover { background: var(--teal-bright) !important; color: var(--navy-deep) !important; }
+  .menu-toggle {
+    display: none;
+    background: rgba(26, 34, 54, 0.6);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    color: var(--text);
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 56px;
+    padding: 8px 14px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: rgba(26, 34, 54, 0.6);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.25s ease;
+  }
+  .lang-switch:hover { color: var(--teal-bright); border-color: var(--border-strong); }
+  @keyframes mobileMenuIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (max-width: 900px) {
+    .container { padding: 0 24px; }
+    .nav { padding: 14px 20px; }
+    .nav.scrolled { padding: 12px 20px; }
+    .nav-links { display: none; }
+    .menu-toggle { display: block; }
+    .lang-switch { margin-right: 8px; }
+    .nav-links.mobile-open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 16px;
+      left: 16px;
+      background: rgba(17, 24, 39, 0.96);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      padding: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 8px 24px rgba(0, 0, 0, 0.3);
+      gap: 2px;
+      animation: mobileMenuIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-links.mobile-open a { padding: 12px 16px; width: 100%; display: block; text-align: right; font-size: 14px; }
+  }
+  .blog-main { padding: 120px 0 64px; }
+  .hero { border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--panel); }
+  .hero img { width: 100%; height: 320px; object-fit: cover; object-position: center 38%; }
+  .hero-content { padding: 24px; }
+  h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); }
+  .lead { margin: 0; color: var(--text-muted); line-height: 1.8; }
+  .card { margin-top: 16px; background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 22px; line-height: 1.8; }
+  .cta { margin-top: 16px; padding: 24px; border-radius: 16px; background: linear-gradient(135deg, #0f766e, #115e59); border: 1px solid rgba(45, 212, 191, 0.4); }
+  .btn { display: inline-block; margin-top: 10px; padding: 12px 18px; border-radius: 12px; background: var(--teal); color: #03201d; text-decoration: none; font-weight: 700; }
+  .footer {
+    background: var(--bg-surface);
+    color: var(--text);
+    padding: 64px 0 28px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+  }
+  .footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(45, 212, 191, 0.06) 0%, transparent 50%);
+  }
+  .footer .container { position: relative; z-index: 2; }
+  .footer-content { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 56px; margin-bottom: 48px; }
+  .footer-logo { height: 44px; margin-bottom: 20px; opacity: 1; }
+  .footer-tagline { font-size: 15px; color: var(--text-muted); max-width: 380px; line-height: 1.6; }
+  .footer-col h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--teal); margin-bottom: 18px; font-weight: 600; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a { color: var(--text-soft); text-decoration: none; font-size: 14px; transition: color 0.3s; }
+  .footer-col a:hover { color: var(--teal); }
+  .footer-bottom { padding-top: 28px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .footer-copy, .footer-credit { font-size: 12px; color: var(--text-muted); }
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .nav-logo { height: 30px; }
+    .nav.scrolled .nav-logo { height: 26px; }
+    .footer-content { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <a href="/?lang=en"><img src="/assets/logo/mainemer-media-logo.svg" alt="Mainemer Media" class="nav-logo"></a>
+  <ul class="nav-links">
+    <li><a href="/?lang=en#about">About</a></li>
+    <li><a href="/?lang=en#services">Services</a></li>
+    <li><a href="/?lang=en#gallery">Work</a></li>
+    <li><a href="/?lang=en#clients">Clients</a></li>
+    <li><a href="/?lang=en#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <a href="/services/executive-personal-branding.html" class="lang-switch" hreflang="he-IL" lang="he" aria-label="Switch language to Hebrew">HE</a>
+  <button class="menu-toggle">Menu</button>
+</nav>
+<main class="blog-main" id="top">
+  <div class="container">
+    <section class="hero">
+      <img src="/assets/hero-executive-personal-branding.png" alt="Executive personal branding" />
+      <div class="hero-content">
+        <h1>Executive personal branding with strategic depth</h1>
+        <p class="lead">Build an executive voice that aligns leadership, market trust, and media visibility.</p>
+      </div>
+    </section>
+    <section class="card">
+      <h2>A strategic branding process for leaders</h2>
+      <ul>
+        <li>Baseline assessment of perception gaps, strengths, and positioning risk.</li>
+        <li>Core narrative design aligned with business goals and leadership agenda.</li>
+        <li>Channel strategy for LinkedIn, speaking, media, and stakeholder touchpoints.</li>
+        <li>Consistent communication framework across internal and external contexts.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Practical deliverables</h2>
+      <ul>
+        <li>90-day thought-leadership content map with topic pillars and cadence.</li>
+        <li>Executive messaging kit for interviews, panels, and high-stakes communication.</li>
+        <li>Simulation drills for tough questions and reputation-sensitive scenarios.</li>
+        <li>Ongoing cadence model to keep visibility high without content fatigue.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Common mistakes, KPIs, and FAQ</h2>
+      <p><strong>Common mistakes:</strong> generic leadership messaging, inconsistent tone, and visibility efforts disconnected from strategic objectives.</p>
+      <p><strong>Useful KPIs:</strong> quality of inbound opportunities, speaking invitations, relevant audience engagement, and stakeholder trust signals.</p>
+      <p><strong>FAQ:</strong> "Is this only for CEOs?" No. It is equally valuable for senior executives and domain leaders building authority.</p>
+    </section>
+    <section class="cta">
+      <h2>Want a stronger executive presence?</h2>
+      <p>Let's define the right strategy for your goals and visibility timeline.</p>
+      <a class="btn" href="/?lang=en#contact">Book a call</a>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <img src="/assets/logo/mainemer-media-logo.svg" alt="Mainemer Media" class="footer-logo">
+        <p class="footer-tagline">Strategic communication advisor, keynote speaker, and conference moderator.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/?lang=en#about">About</a></li><li><a href="/?lang=en#services">Services</a></li><li><a href="/?lang=en#gallery">Work</a></li><li><a href="/?lang=en#clients">Clients</a></li><li><a href="/?lang=en#contact">Contact</a></li>
+          <li><a href="/en/about-itamar.html">About Itamar</a></li><li><a href="/en/case-studies.html">Case Studies</a></li><li><a href="/en/privacy-policy.html">Privacy Policy</a></li><li><a href="/en/terms-of-use.html">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/itamar-mainemer?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://x.com/itamar_mainemer" target="_blank" rel="noopener">X (Twitter)</a></li>
+          <li><a href="https://instagram.com/itamar_mainemer" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://tiktok.com/@itamar_mainemer" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="/">Hebrew</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Blogs (IL / EN)</h4>
+        <ul>
+          <li><a href="/services/strategic-communications.html">Strategic Communications (IL)</a> | <a href="/en/services/strategic-communications.html">EN</a></li>
+          <li><a href="/services/public-relations.html">Public Relations (IL)</a> | <a href="/en/services/public-relations.html">EN</a></li>
+          <li><a href="/services/conference-moderation.html">Conference Moderation (IL)</a> | <a href="/en/services/conference-moderation.html">EN</a></li>
+          <li><a href="/services/ai-lectures.html">AI Lectures (IL)</a> | <a href="/en/services/ai-lectures.html">EN</a></li>
+          <li><a href="/services/executive-personal-branding.html">Executive Branding (IL)</a> | <a href="/en/services/executive-personal-branding.html">EN</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2026 Mainemer Media. All rights reserved.</p><p class="footer-credit">Built with intent.</p></div>
+  </div>
+</footer>
+<script>
+  const nav = document.getElementById("nav");
+  window.addEventListener("scroll", () => {
+    nav.classList.toggle("scrolled", window.scrollY > 30);
+  });
+
+  async function syncLogoSourcesFromMainSite() {
+    const navLogo = document.querySelector("img.nav-logo");
+    const footerLogo = document.querySelector("img.footer-logo");
+    if (!navLogo && !footerLogo) return;
+
+    const navFallbackSrc = navLogo ? navLogo.getAttribute("src") : "";
+    const footerFallbackSrc = footerLogo ? footerLogo.getAttribute("src") : "";
+
+    try {
+      const response = await fetch("/index.html", { credentials: "same-origin" });
+      if (!response.ok) return;
+
+      const html = await response.text();
+      const parsed = new DOMParser().parseFromString(html, "text/html");
+      const mainNavLogo = parsed.querySelector("img.nav-logo");
+      const mainNavSrc = mainNavLogo ? mainNavLogo.getAttribute("src") : "";
+      const mainFooterLogo = parsed.querySelector("img.footer-logo");
+      const mainFooterSrc = mainFooterLogo ? mainFooterLogo.getAttribute("src") : "";
+
+      if (navLogo) {
+        navLogo.setAttribute("src", mainNavSrc || navFallbackSrc || "");
+      }
+      if (footerLogo) {
+        footerLogo.setAttribute("src", mainFooterSrc || footerFallbackSrc || "");
+      }
+    } catch (error) {
+      if (navLogo && navFallbackSrc) navLogo.setAttribute("src", navFallbackSrc);
+      if (footerLogo && footerFallbackSrc) footerLogo.setAttribute("src", footerFallbackSrc);
+    }
+  }
+
+  syncLogoSourcesFromMainSite();
+
+  const toggle = document.querySelector(".menu-toggle");
+  const links = document.querySelector(".nav-links");
+  if (toggle && links) {
+    toggle.addEventListener("click", () => {
+      const isMobile = window.innerWidth <= 900;
+      if (!isMobile) return;
+      const isOpen = links.classList.contains("mobile-open");
+      links.classList.toggle("mobile-open", !isOpen);
+    });
+    document.querySelectorAll(".nav-links a").forEach((a) => {
+      a.addEventListener("click", () => {
+        if (window.innerWidth <= 900) {
+          links.classList.remove("mobile-open");
+        }
+      });
+    });
+    document.addEventListener("click", (e) => {
+      if (
+        window.innerWidth <= 900 &&
+        !toggle.contains(e.target) &&
+        !links.contains(e.target) &&
+        links.classList.contains("mobile-open")
+      ) {
+        links.classList.remove("mobile-open");
+      }
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) {
+        links.classList.remove("mobile-open");
+      }
+    });
+  }
+</script>
+</body>
+</html>
