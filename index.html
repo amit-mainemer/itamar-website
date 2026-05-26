@@ -2874,6 +2874,7 @@
   });
 
   function applyEnglishMode() {
+    const basePath = "/itamar-website";
     document.documentElement.lang = "en";
     document.documentElement.dir = "ltr";
     document.body.classList.add("lang-en");
@@ -2881,7 +2882,7 @@
     const langSwitch = document.querySelector(".lang-switch");
     if (langSwitch) {
       langSwitch.textContent = "HE";
-      langSwitch.setAttribute("href", "/");
+      langSwitch.setAttribute("href", `${basePath}/`);
       langSwitch.setAttribute("hreflang", "he-IL");
       langSwitch.setAttribute("lang", "he");
       langSwitch.setAttribute("aria-label", "Switch language to Hebrew");
@@ -2929,18 +2930,21 @@
     updateMetaTag('name', 'twitter:description', "Strategic communications, public relations, AI lectures and conference moderation in Israel.");
 
     const linkMap = {
-      "/about-itamar.html": "/en/about-itamar.html",
-      "/case-studies.html": "/en/case-studies.html",
-      "/privacy-policy.html": "/en/privacy-policy.html",
-      "/terms-of-use.html": "/en/terms-of-use.html",
-      "/services/strategic-communications.html": "/en/services/strategic-communications.html",
-      "/services/public-relations.html": "/en/services/public-relations.html",
-      "/services/conference-moderation.html": "/en/services/conference-moderation.html",
-      "/services/ai-lectures.html": "/en/services/ai-lectures.html",
-      "/services/executive-personal-branding.html": "/en/services/executive-personal-branding.html"
+      [`${basePath}/about-itamar.html`]: `${basePath}/en/about-itamar.html`,
+      [`${basePath}/case-studies.html`]: `${basePath}/en/case-studies.html`,
+      [`${basePath}/privacy-policy.html`]: `${basePath}/en/privacy-policy.html`,
+      [`${basePath}/terms-of-use.html`]: `${basePath}/en/terms-of-use.html`,
+      [`${basePath}/services/strategic-communications.html`]: `${basePath}/en/services/strategic-communications.html`,
+      [`${basePath}/services/public-relations.html`]: `${basePath}/en/services/public-relations.html`,
+      [`${basePath}/services/conference-moderation.html`]: `${basePath}/en/services/conference-moderation.html`,
+      [`${basePath}/services/ai-lectures.html`]: `${basePath}/en/services/ai-lectures.html`,
+      [`${basePath}/services/executive-personal-branding.html`]: `${basePath}/en/services/executive-personal-branding.html`
     };
     document.querySelectorAll('a[href]').forEach((a) => {
       const href = a.getAttribute('href');
+      if (a.textContent.includes("(IL)")) {
+        return;
+      }
       if (linkMap[href]) {
         a.setAttribute('href', linkMap[href]);
       }
