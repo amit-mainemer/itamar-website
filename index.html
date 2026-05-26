@@ -2942,9 +2942,6 @@
     };
     document.querySelectorAll('a[href]').forEach((a) => {
       const href = a.getAttribute('href');
-      if (a.textContent.includes("(IL)")) {
-        return;
-      }
       if (linkMap[href]) {
         a.setAttribute('href', linkMap[href]);
       }
@@ -3103,11 +3100,11 @@
       "יחסי ציבור": "Public Relations",
       "הרצאות AI": "AI Lectures",
       "מיתוג אישי למנהלים": "Executive Personal Branding",
-      "ייעוץ תקשורת אסטרטגי (IL)": "Strategic Communications (IL)",
-      "יחסי ציבור (IL)": "Public Relations (IL)",
-      "הנחיית כנסים ופאנלים (IL)": "Conference and Panel Moderation (IL)",
-      "הרצאות AI (IL)": "AI Lectures (IL)",
-      "מיתוג אישי למנהלים (IL)": "Executive Personal Branding (IL)",
+      "ייעוץ תקשורת אסטרטגי (IL)": "Strategic Communications",
+      "יחסי ציבור (IL)": "Public Relations",
+      "הנחיית כנסים ופאנלים (IL)": "Conference and Panel Moderation",
+      "הרצאות AI (IL)": "AI Lectures",
+      "מיתוג אישי למנהלים (IL)": "Executive Personal Branding",
       "הרשמה לקבלת עדכונים": "Sign up for updates",
       "כל הזכויות שמורות.": "All rights reserved.",
       "חיוג": "Call"
