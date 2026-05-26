@@ -2,7 +2,7 @@
 
 ## Google Search Console
 - [ ] Verify domain ownership (replace `ADD_GOOGLE_SEARCH_CONSOLE_TOKEN` in `index.html`).
-- [ ] Submit `https://itamarmainemer.com/sitemap.xml`.
+- [ ] Submit `https://amit-mainemer.github.io/itamar-website/sitemap.xml`.
 - [ ] Confirm indexing for homepage, service pages and English page.
 - [ ] Review Coverage and Page Indexing reports weekly.
 
